@@ -17,3 +17,15 @@ test('Does not work with not string', () => {
     reverseString(1234);
   }).toThrow();
 });
+
+test('Work with one char', () => {
+  expect(reverseString('s')).toMatch('s');
+});
+
+test('Work with two char', () => {
+  expect(reverseString('sa')).toMatch('as');
+});
+
+test('Case sensitivity', () => {
+  expect(reverseString('KaRoL')).toMatch('LoRaK');
+});
