@@ -1,7 +1,8 @@
 function analyzeArray(numArray) {
   const average = calcAverageValue(numArray);
   const min = calcMinValue(numArray);
-
+  const max = calcMaxValue(numArray);
+  const length = numArray.length;
   function calcAverageValue(array) {
     const sum = array.reduce((accumulator, currentValue) => {
       return accumulator + currentValue;
@@ -17,8 +18,17 @@ function analyzeArray(numArray) {
     });
     return min;
   }
-  return { average, min };
+
+  function calcMaxValue(array) {
+    const max = array.reduce((accu, value) => {
+      if (value > accu) return value;
+      else return accu;
+    });
+    return max;
+  }
+
+  return { average, min, max, length };
 }
 
-console.log(analyzeArray([1, 8, 3, 4, 2, 6]));
+console.log(analyzeArray([1]));
 export default analyzeArray;
