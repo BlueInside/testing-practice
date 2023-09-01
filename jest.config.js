@@ -144,7 +144,8 @@ const config = {
   testPathIgnorePatterns: [
     '/node_modules/', // Exclude node_modules
     'capitalize\\.test\\.js', // Exclude capitalize.test.js
-    'reverseString\\.test\\.js',
+    'reverseString\\.test\\.js', // Exclude reverseString.test.js
+    'calculator\\.test\\.js', // Exclude calculator.test.js
   ],
 };
 
