@@ -146,7 +146,7 @@ const config = {
     'capitalize\\.test\\.js', // Exclude capitalize.test.js
     'reverseString\\.test\\.js', // Exclude reverseString.test.js
     'calculator\\.test\\.js', // Exclude calculator.test.js
-    'caesarCipheṛ\\.test\\.js', //Exclude caesarCipher.test.js
+    'caesarCipher\\.test\\.js', //Exclude caesarCipher.test.js
   ],
 };
 
