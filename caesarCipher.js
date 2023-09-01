@@ -26,6 +26,5 @@ function encrypt(stringAsArray, shift, alphabet) {
   });
   return result;
 }
-console.log(caesarCipher('szef', -24));
 
 export default caesarCipher;
